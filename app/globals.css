@@ -2,26 +2,93 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  .btn-primary {
+    @apply p-4 text-sm sm:text-lg bg-black text-white rounded-br-2xl font-medium hover:bg-neutral-800;
+  }
+  .btn-subtle {
+    @apply p-4 text-sm sm:text-lg bg-neutral-200 text-black rounded-br-2xl font-medium hover:bg-neutral-300;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+a:hover {
+  text-decoration: underline;
+}
+
+.popup {
+  width: 40rem;
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 1rem;
+  border: 1px solid black;
+  border-left: 4px solid black;
+  border-radius: 0 0 2rem 0; /* Rounded corners at the top */
+}
+
+.popup-content {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ANIMATIONS */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-bounce-1 {
+  animation: bounce 0.5s infinite 0s; /* No delay for the first element */
+}
+
+.animate-bounce-2 {
+  animation: bounce 0.5s infinite 0.1s; /* 0.2s delay for the second element */
+}
+
+.animate-bounce-3 {
+  animation: bounce 0.5s infinite 0.2s; /* 0.4s delay for the third element */
+}
+
+/* Small screens (phones) */
+@media (max-width: 640px) {
+  .popup {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .popup-content {
+    flex-direction: column;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 641px) and (max-width: 768px) {
+  /* Adjust styles for medium screens */
+}
+
+/* Large screens (desktops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Adjust styles for large screens */
+}
+
+/* Extra-large screens (large desktops) */
+@media (min-width: 1025px) {
+  /* Adjust styles for extra-large screens */
 }

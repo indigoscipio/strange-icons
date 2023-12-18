@@ -2,7 +2,9 @@ import React from "react";
 
 const IconSize = ({ iconSize, setIconSize }) => (
   <div className="col-span-2 lg:col-span-3 flex items-center space-x-4 bg-neutral-800 p-4 rounded-br-xl border border-neutral-700">
-    <div className="text-lg">↗</div>
+    <div className="text-lg">
+      <img src="/icons/website/arrow-resize-horizontal.svg" alt="" />
+    </div>
     <label className="flex-1">
       <input
         type="range"

@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "footer-bg": "url('/images/footer-bg.svg')",
+        "hero-bg":
+          "linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('/images/si-hero-2.jpg')",
       },
       fontFamily: {
         roobert: ["var(--font-roobert)"],

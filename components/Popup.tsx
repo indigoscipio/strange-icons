@@ -59,10 +59,15 @@ const Popup = ({ icon, closePopup, iconSize }) => {
         // Convert canvas to data URL (PNG)
         const pngUrl = canvas.toDataURL("image/png");
 
+        // Extract the file name without the ".svg" extension
+        const fileNameWithoutExtension = icon.name.replace(".svg", "");
+
         // Create a temporary download link
         const downloadLink = document.createElement("a");
         downloadLink.href = pngUrl;
-        downloadLink.download = `${icon.name}.png`;
+
+        // Update the download link to remove the ".svg" extension
+        downloadLink.download = `${fileNameWithoutExtension}.png`;
         document.body.appendChild(downloadLink);
 
         // Trigger the click event to start the download
@@ -123,20 +128,36 @@ const Popup = ({ icon, closePopup, iconSize }) => {
             {icon.name}
           </h3>
           <div className="flex-wrap items-center justify-center flex flex-row gap-2">
-            <button onClick={downloadSVG} className="flex-none btn-subtle">
-              🔽 SVG
+            <button
+              onClick={downloadSVG}
+              className="gap-1 flex-none btn-subtle flex items-center"
+            >
+              <img src="/icons/website/download.svg" alt="" />
+              SVG
             </button>
-            <button onClick={downloadPNG} className="btn-subtle">
-              🔽 PNG
+            <button
+              onClick={downloadPNG}
+              className="gap-1 flex-none btn-subtle flex items-center"
+            >
+              <img src="/icons/website/image.svg" alt="" />
+              PNG
             </button>
-            <button onClick={copyCodeToClipboard} className="btn-subtle">
-              {isCopied ? "✅ Copied!" : "📋 Copy SVG"}
+            <button
+              onClick={copyCodeToClipboard}
+              className="gap-1 flex-none btn-subtle flex items-center"
+            >
+              {isCopied ? (
+                <img src="/icons/website/check.svg" alt="" />
+              ) : (
+                <img src="/icons/website/copy.svg" alt="" />
+              )}
+              {isCopied ? "Copied!" : "Copy SVG"}
             </button>
           </div>
         </div>
 
         <button onClick={closePopup} className="p-2">
-          ❌
+          <img width="32" height="32" src="/icons/website/close.svg" alt="" />
         </button>
       </div>
     </div>

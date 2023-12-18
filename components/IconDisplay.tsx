@@ -11,6 +11,7 @@ import { fetchIcons } from "@/services/fetchIcons";
 import ResetButton from "./ResetButton";
 import Popup from "./Popup";
 import IconNotFound from "./IconNotFound";
+import { getIconsFromDB } from "@/config/supabase";
 
 const IconDisplay = () => {
   const initialCategory = "asklepios";
@@ -49,8 +50,8 @@ const IconDisplay = () => {
 
   return (
     <section id="section-icon-display" className="relative">
-      <div className="sticky top-0 bg-black text-white rounded-tr-2xl">
-        <div className="container grid grid-cols-2 lg:grid-cols-12 mx-auto gap-4 p-4">
+      <div className="sticky top-0 bg-black text-white rounded-tl-3xl">
+        <div className="container grid grid-cols-2 lg:grid-cols-12 mx-auto gap-2 p-4">
           <IconSearch
             searchQuery={searchQuery}
             setSearchQuery={setSearchQuery}

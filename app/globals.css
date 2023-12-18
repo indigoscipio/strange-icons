@@ -75,6 +75,7 @@ a:hover {
 
   .popup-content {
     flex-direction: column;
+    padding: 0;
   }
 }
 

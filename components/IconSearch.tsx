@@ -10,8 +10,9 @@ const IconSearch = ({ searchQuery, setSearchQuery }) => (
       value={searchQuery}
       onChange={(e) => setSearchQuery(e.target.value)}
     />
-    <div className="absolute top-0 right-0 flex items-center h-full pr-4 pointer-events-none">
-      🔍
+
+    <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+      <img src="/icons/website/magnifying-glass.svg" alt="" />
     </div>
   </div>
 );

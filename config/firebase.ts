@@ -3,7 +3,13 @@ import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 import { getFirestore } from "firebase/firestore";
-import { getStorage, getDownloadURL, listAll, ref } from "firebase/storage";
+import {
+  getStorage,
+  getDownloadURL,
+  getMetadata,
+  listAll,
+  ref,
+} from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -20,36 +26,44 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const storage = getStorage(app);
 
+const cache = {};
+
 export async function getIcons(category, style) {
+  // const cacheKey = `${category}_${style}`;
+
+  // // Check if data is in the cache
+  // if (cache[cacheKey]) {
+  //   return cache[cacheKey];
+  // }
+
   const icons = [];
 
   const fileList = await listAll(ref(storage, `icons/${category}/${style}`));
-  console.log(fileList);
+  // console.log(fileList);
 
   await Promise.all(
     fileList.items.map(async (item) => {
       const url = await getDownloadURL(item);
-      console.log(item);
+      const metadata = await getMetadata(item);
+
+      const timeCreated = new Date(metadata.timeCreated).getTime();
+      const now = Date.now();
+      const isNew = now - timeCreated < 7 * 24 * 60 * 60 * 1000; // Assume icons added in the last 7 days as "new"
+
       icons.push({
         name: item.name,
         url: url,
         style: style,
         category: category,
+        isNew: isNew,
       });
     })
   );
 
   icons.sort((a, b) => a.name.localeCompare(b.name));
+  // cache[cacheKey] = icons;
 
   return icons;
-}
-
-async function getIconsByName(fileName) {
-  const storageRef = ref(storage, `icons/${fileName}`);
-
-  const file = await getDownloadURL(storageRef);
-
-  return { url: file, name: fileName };
 }
 
 export { app };

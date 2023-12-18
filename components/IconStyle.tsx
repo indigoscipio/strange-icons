@@ -5,7 +5,7 @@ const IconStyle = ({ selectedStyle, setSelectedStyle }) => (
     <label
       title="Monotone"
       htmlFor="monotone"
-      className={`w-full text-center p-4 border border-neutral-700 rounded-br-xl cursor-pointer ${
+      className={`w-full flex items-center justify-center border border-neutral-700 rounded-br-xl cursor-pointer ${
         selectedStyle === "monotone" ? "bg-neutral-600" : "bg-neutral-800"
       }`}
     >
@@ -17,12 +17,12 @@ const IconStyle = ({ selectedStyle, setSelectedStyle }) => (
         name="style"
         type="radio"
       />
-      M
+      <img src="/icons/website/icon-style-monotone.svg" alt="" />
     </label>
     <label
       title="Duotone"
       htmlFor="duotone"
-      className={`w-full text-center p-4 border border-neutral-700 rounded-br-xl cursor-pointer ${
+      className={`w-full flex items-center justify-center border border-neutral-700 rounded-br-xl cursor-pointer ${
         selectedStyle === "duotone" ? "bg-neutral-600" : "bg-neutral-800 "
       }`}
     >
@@ -34,12 +34,12 @@ const IconStyle = ({ selectedStyle, setSelectedStyle }) => (
         onChange={() => setSelectedStyle("duotone")}
         className="appearance-none hidden"
       />
-      D
+      <img src="/icons/website/icon-style-duotone.svg" alt="" />
     </label>
     <label
       htmlFor="solid"
       title="Solid"
-      className={`w-full text-center p-4 border border-neutral-700 rounded-br-xl cursor-pointer ${
+      className={`w-full flex items-center justify-center border border-neutral-700 rounded-br-xl cursor-pointer ${
         selectedStyle === "solid" ? "bg-neutral-600" : "bg-neutral-800"
       }`}
     >
@@ -51,7 +51,7 @@ const IconStyle = ({ selectedStyle, setSelectedStyle }) => (
         onChange={() => setSelectedStyle("solid")}
         className="appearance-none hidden"
       />
-      S
+      <img src="/icons/website/icon-style-solid.svg" alt="" />
     </label>
   </div>
 );

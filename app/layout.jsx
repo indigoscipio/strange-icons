@@ -4,8 +4,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 export const metadata = {
-  title: "Strange UI Icons",
-  description: "By Samuel Oktavianus",
+  title: "strangeicons | Healthcare & Biotech UI Icons | 3,000+ Libraries",
+  description:
+    "Streamline your healthcare  & biotech projects with a collection of holistic UI icons from strangeicons. Design cutting-edge healthcare user interfaces efficiently.",
 };
 
 const roobert = localFont({
@@ -29,6 +30,9 @@ const roobert = localFont({
 export default function RootLayout({ children }) {
   return (
     <html className={`${roobert.className} scroll-smooth`} lang="en">
+      <head>
+        <link rel="icon" href="/favicon.png" />
+      </head>
       <body>
         <Nav />
         {children}

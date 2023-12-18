@@ -44,13 +44,17 @@ const Footer = () => {
             </Link>
             <Link
               rel="noopener noreferrer"
-              href="https://www.figma.com/@strangehelix"
               target="_blank"
+              href="https://www.figma.com/@strangehelix"
             >
               <li>Figma Community</li>
             </Link>
-            <Link href="#">
-              <li>Request Icon</li>
+            <Link
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/indigoscipio/strange-icons/issues"
+            >
+              <li>Icon & Feature Request</li>
             </Link>
             <Link
               rel="noopener noreferrer"
@@ -94,7 +98,7 @@ const Footer = () => {
             <Link
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/indigoscipio"
+              href="https://github.com/indigoscipio/strange-icons"
             >
               <li className="w-10 h-10 border border-white flex items-center justify-center rounded-tl-xl">
                 <img src="/icons/website/socials-github.svg" alt="" />

@@ -16,7 +16,12 @@ const IconCategory = ({ selectedCategory, setSelectedCategory }) => (
       <option value="sandow">Sandow 🏋️‍♀️</option>
     </select>
     <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
-      <img src="/icons/website/chevron-down.svg" alt="" />
+      <img
+        width="24"
+        height="24"
+        src="/icons/website/chevron-down.svg"
+        alt=""
+      />
     </div>
   </div>
 );

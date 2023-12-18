@@ -7,7 +7,12 @@ const ResetButton = ({ handleReset }) => {
       onClick={handleReset}
       className="col-span-1 bg-white text-black p-4 rounded-br-xl hover:bg-neutral-200 flex items-center justify-center"
     >
-      <img src="/icons/website/arrow-refresh.svg" alt="" />
+      <img
+        width="24"
+        height="24"
+        src="/icons/website/arrow-refresh.svg"
+        alt=""
+      />
     </button>
   );
 };

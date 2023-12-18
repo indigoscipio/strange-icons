@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const Hero = () => {
   return (
     <section className="bg-hero-bg bg-right-bottom bg-no-repeat bg-cover">

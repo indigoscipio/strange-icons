@@ -11,8 +11,7 @@ const Icon = ({ icon, iconSize, onIconClick }) => {
       <div className="text-center">
         <img
           src={icon.url}
-          alt=""
-          sizes=""
+          alt={icon.name}
           width={iconSize}
           height={iconSize}
           className="mx-auto py-4"

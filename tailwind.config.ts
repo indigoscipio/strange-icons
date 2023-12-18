@@ -11,7 +11,7 @@ const config: Config = {
       backgroundImage: {
         "footer-bg": "url('/images/footer-bg.svg')",
         "hero-bg":
-          "linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('/images/si-hero-2.jpg')",
+          "linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('/images/si-hero-2.webp')",
       },
       fontFamily: {
         roobert: ["var(--font-roobert)"],

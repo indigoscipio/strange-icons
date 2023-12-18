@@ -12,7 +12,12 @@ const IconSearch = ({ searchQuery, setSearchQuery }) => (
     />
 
     <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
-      <img src="/icons/website/magnifying-glass.svg" alt="" />
+      <img
+        width="24"
+        height="24"
+        src="/icons/website/magnifying-glass.svg"
+        alt=""
+      />
     </div>
   </div>
 );

@@ -17,7 +17,12 @@ const IconStyle = ({ selectedStyle, setSelectedStyle }) => (
         name="style"
         type="radio"
       />
-      <img src="/icons/website/icon-style-monotone.svg" alt="" />
+      <img
+        width="24"
+        height="24"
+        src="/icons/website/icon-style-monotone.svg"
+        alt=""
+      />
     </label>
     <label
       title="Duotone"
@@ -34,7 +39,12 @@ const IconStyle = ({ selectedStyle, setSelectedStyle }) => (
         onChange={() => setSelectedStyle("duotone")}
         className="appearance-none hidden"
       />
-      <img src="/icons/website/icon-style-duotone.svg" alt="" />
+      <img
+        width="24"
+        height="24"
+        src="/icons/website/icon-style-duotone.svg"
+        alt=""
+      />
     </label>
     <label
       htmlFor="solid"
@@ -51,7 +61,12 @@ const IconStyle = ({ selectedStyle, setSelectedStyle }) => (
         onChange={() => setSelectedStyle("solid")}
         className="appearance-none hidden"
       />
-      <img src="/icons/website/icon-style-solid.svg" alt="" />
+      <img
+        width="24"
+        height="24"
+        src="/icons/website/icon-style-solid.svg"
+        alt=""
+      />
     </label>
   </div>
 );

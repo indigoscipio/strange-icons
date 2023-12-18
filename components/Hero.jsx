@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <section className="bg-hero-bg bg-right-bottom bg-no-repeat bg-cover">
       <div className="container px-4 md:mx-auto py-24 lg:py-48 md:py-64">
-        <div className="w-full sm:w-1/2 flex flex-col gap-16 items-left text-left">
+        <div className="w-full sm:w-1/2 flex flex-col gap-10 lg:gap-16 items-left text-left">
           <h1 className="text-4xl md:text-6xl font-semibold tracking-tight">
             Holistic UI Icons System for Healthcare
           </h1>

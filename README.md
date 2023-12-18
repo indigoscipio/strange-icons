@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# strangeicons
+
+Welcome to strangeicons – Holistic Healthcare & Biotech UI Icon Libraries!
 
 ## Getting Started
 
-First, run the development server:
+To get started with strangeicons, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Installation:**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   - Clone the repository: `git clone https://github.com/indigoscipio/strangeicons.git`
+   - Navigate to the project directory: `cd strangeicons`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Usage:**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   - Integrate the icons into your UI/UX projects effortlessly.
 
-## Learn More
+3. **Contribution:**
+   - We welcome contributions! If you have ideas for new icons or improvements, please submit a pull request.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the [License Name] - see the [LICENSE](LICENSE) file for details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Acknowledgments
 
-## Deploy on Vercel
+- Special thanks to our team members: Samuel Oktavianus, Emilia Lin, and Francesca Schafer.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to customize this template based on the specific details and structure you want for your README.md file. Add relevant links, images, and information as needed.

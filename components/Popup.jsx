@@ -1,6 +1,6 @@
 "use client";
 
-import { formatIconName } from "@/lib/formatIconName";
+import { formatIconName } from "../lib/formatIconName";
 import { useState } from "react";
 
 const Popup = ({ icon, closePopup, iconSize }) => {

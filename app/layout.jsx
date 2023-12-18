@@ -1,10 +1,9 @@
-import Footer from "@/components/Footer";
-import Nav from "@/components/Nav";
-import type { Metadata } from "next";
+import Footer from "../components/Footer";
+import Nav from "../components/Nav";
 import localFont from "next/font/local";
 import "./globals.css";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Strange UI Icons",
   description: "By Samuel Oktavianus",
 };
@@ -27,11 +26,7 @@ const roobert = localFont({
   variable: "--font-roobert",
 });
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html className={`${roobert.className} scroll-smooth`} lang="en">
       <body>

@@ -1,5 +1,5 @@
 "use client";
-import { formatIconName } from "@/lib/formatIconName";
+import { formatIconName } from "../lib/formatIconName";
 import React, { useState } from "react";
 
 const Icon = ({ icon, iconSize, onIconClick }) => {

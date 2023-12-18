@@ -7,11 +7,11 @@ import IconCategory from "./IconCategory";
 import IconStyle from "./IconStyle";
 import IconSize from "./IconSize";
 import Loader from "./Loader";
-import { fetchIcons } from "@/services/fetchIcons";
+import { fetchIcons } from "../services/fetchIcons";
 import ResetButton from "./ResetButton";
 import Popup from "./Popup";
 import IconNotFound from "./IconNotFound";
-import { getIconsFromDB } from "@/config/supabase";
+import { getIconsFromDB } from "../config/supabase";
 
 const IconDisplay = () => {
   const initialCategory = "asklepios";

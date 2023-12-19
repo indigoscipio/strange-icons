@@ -4,11 +4,11 @@ const Hero = () => {
       <div className="container px-4 md:mx-auto py-24 lg:py-48 md:py-64">
         <div className="w-full sm:w-1/2 flex flex-col gap-10 lg:gap-16 items-left text-left">
           <h1 className="text-4xl md:text-6xl font-semibold tracking-tight">
-            Holistic UI Icons System for Healthcare
+            3,000+ Cohesive Healthcare & Biotech UI Icons
           </h1>
           <p className="text-xl  md:text-2xl font-normal">
             Streamline your healthcare and biotech projects with our curated
-            collection of over <b>3,000+</b> custom, open-source UI icons! 🏥
+            collection of over <b>3,000+</b> custom UI icons! 🏥
           </p>
           <ul className="flex flex-wrap flex-row flex-wrap gap-4 uppercase font-semibold tracking-wide text-md">
             <li className="border border-black p-4 rounded-bl-2xl mb-2">

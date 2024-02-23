@@ -42,13 +42,7 @@ const Footer = () => {
             >
               <li>Visit Our Store</li>
             </Link>
-            <Link
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://www.figma.com/@strangehelix"
-            >
-              <li>Figma Community</li>
-            </Link>
+
             <Link
               rel="noopener noreferrer"
               target="_blank"

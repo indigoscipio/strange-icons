@@ -22,7 +22,7 @@ const Footer = () => {
           </Link>
           <h3 className="text-2xl font-normal">
             strangeicons is a collaborative project designed to improve user
-            interfaces within the biotech and healthcare space. Made by Samuel
+            interfaces within the healthcare and biotech space. Made by Samuel
             Oktavianus + Emilia Lin.
           </h3>
           <Link href="#section-icon-display">

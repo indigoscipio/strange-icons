@@ -46,7 +46,7 @@ const Footer = () => {
             <Link
               rel="noopener noreferrer"
               target="_blank"
-              href="https://github.com/indigoscipio/strange-icons/issues"
+              href="https://strangehelix.bio/contact-us"
             >
               <li>Icon & Feature Request</li>
             </Link>
@@ -89,7 +89,7 @@ const Footer = () => {
               </li>
             </Link>
 
-            <Link
+            {/* <Link
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/indigoscipio/strange-icons"
@@ -97,7 +97,7 @@ const Footer = () => {
               <li className="w-10 h-10 border border-white flex items-center justify-center rounded-tl-xl">
                 <img src="/icons/website/socials-github.svg" alt="" />
               </li>
-            </Link>
+            </Link> */}
           </ul>
         </div>
 

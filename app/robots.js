@@ -5,6 +5,6 @@ export default function robots() {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "./sitemap.xml",
+    sitemap: "https://www.strangeicons.com/sitemap.xml",
   };
 }

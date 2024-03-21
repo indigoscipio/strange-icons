@@ -2,9 +2,10 @@ import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
-  title: "strangeicons | Healthcare & Biotech UI Icons | 3,000+ Libraries",
+  title: "strangeicons | Healthcare & Biotech UI Icons | 3,000+ Icon Libraries",
   description:
     "Streamline your healthcare  & biotech projects with a collection of holistic UI icons from strangeicons. Design cutting-edge healthcare user interfaces efficiently.",
 };
